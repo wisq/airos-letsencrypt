@@ -8,10 +8,10 @@ for host in "$@"; do
 	new_serial="`openssl x509 -in etc/live/"$host"/fullchain.pem -noout -serial`"
 
 	if [ "$old_serial" = "$new_serial" ]; then
-		echo "Cert on "$host" is up-to-date."
+		echo "Cert on $host is up-to-date."
 	else
 		echo
-		echo "Updating certs on "$host" ..."
+		echo "Updating certs on $host ..."
 		rm -rf tmp/"$host"
 		mkdir -p tmp/"$host"/etc/persistent/https
 		cp etc/live/"$host"/privkey.pem tmp/"$host"/etc/persistent/https/server.key
