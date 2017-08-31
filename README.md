@@ -35,7 +35,7 @@ Generate and install LetsEncrypt TLS certificates for Ubiquiti AirOS devices.
 
 ## Compatibility
 
-Tested with two Ubiquiti Nanobeam 5AC Gen2 devices.  Compatibility with other devcies is unknown.
+Tested with two Ubiquiti Nanobeam 5AC Gen2 devices.  Compatibility with other devices is unknown.
 
 Developed and tested on Debian Linux (sid) using certbot 0.17.0.
 
