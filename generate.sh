@@ -9,4 +9,4 @@ for host in "$@"; do
 done
 
 echo
-exec ./copy.sh "$@"
+exec ./install_all.sh "$@"
