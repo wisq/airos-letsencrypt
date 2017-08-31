@@ -4,7 +4,8 @@
 
 Here's the relevant files for TLS on AirOS, as best I can tell:
 
-* `/etc/persistent/https/` seems to be where the certs should be stored.  `server.crt` is the X.509 cert, `server.key` is the private key.
+* `/etc/persistent/https/` seems to be where the certs should be stored.
+  * `server.crt` is the X.509 cert, `server.key` is the private key.
 * `/etc/https/` consists of symlinks to `/etc/persistent/https/`
 * `/etc/server.pem` is what really matters at runtime.
   * It's a concatenated mix of `server.crt` and `server.key`.
