@@ -15,6 +15,7 @@ Generate and install LetsEncrypt TLS certificates for Ubiquiti AirOS devices.
     * It is strongly recommended to use an SSH agent or passwordless SSH key.
 * A DNSimple account, authoritative for the domain you intend to use.
   * You can use other DNS providers supported by `certbot` plugins, but that's up to you to set up.
+  * You'll need to install the plugin: `pip install certbot-dns-dnsimple`
 
 ## Instructions
 
@@ -26,6 +27,7 @@ Generate and install LetsEncrypt TLS certificates for Ubiquiti AirOS devices.
 3. Periodically, run `./renew.sh fqdn1 fqdn2 fqdn3` (etc.) to renew your certificates.
   * It's recommended you run this in a daily cronjob.
   * Certs will not be renewed unless they are near expiry.
+  * Note that if you just run `./renew.sh` without any hostnames, certs will be renewed, but will not be installed.
 
 ## Caveats
 
