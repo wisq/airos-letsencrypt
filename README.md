@@ -39,8 +39,10 @@ Tested with two Ubiquiti Nanobeam 5AC Gen2 devices.  Compatibility with other de
 
 Developed and tested on Debian Linux (sid) using certbot 0.17.0.
 
-## Disclaimer
+## Legal stuff
 
-This software comes with no warranty.  If it somehow bricks your devices, I'm not liable.
+Copyright © 2016-2017, Adrian Irving-Beer.
+
+These scripts are released under the [Apache 2 License](LICENSE) and are provided with **no warranty**.  If they somehow brick your devices, I'm not liable.
 
 The author of this software has no relation to Ubiquiti except as one of their customers.  All trademarks are the property of their respective owners.
